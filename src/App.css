@@ -1,32 +1,113 @@
-.App {
-  text-align: center;
+.navBar {
+  height: 10vh;
+  width: 100vw;
+  background-color: black;
+  color: black;
+  opacity: .95;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.home {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: white;
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  cursor: pointer;
+}
+
+.homePage {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.backGround {
+  height: 100vh;
+  width: auto;
+  background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw==");
+  opacity: .95;
+}
+
+.homePage {
+  position: relative;
+  margin: 200px auto 0;
+  width: 300px;
+  height: 250px;
+  background: linear-gradient(0deg, #000, #262626);
+}
+
+.homePage:before,
+.homePage:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  Left: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+
+.homePage:after {
+  filter: blur(25px)
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+
+}
+
+.gamesBtn {
+  opacity: 1;
+  background: none;
+  color: white;
+  font-size: 3rem;
+  border: 0.5rem solid white;
+  border-radius: 1rem;
+  margin: 4rem;
+  margin-top: 5rem;
+}
+
+.gamesRoute {
+  display: flex;
+  justify-content: center;
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+  align-items: center;
+  width: 100vw;
+}
+
+.gamePoster {
+  height: 30vh;
+  width: 25vh;
+}
+
+.gamesList {
+  border: solid .25rem black;
+  margin: 1rem;
+  width: 15rem;
+  height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 1rem;
 }
