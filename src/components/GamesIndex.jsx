@@ -24,7 +24,10 @@ const GamesIndex = props => {
             <h2> Year: {games.year}</h2>
           </div>
           <div className="gameMultiplayer">
-            <h2>Multiplayer: {games.multiplayer}</h2>
+            <h2>
+              Multiplayer:{" "}
+              {games.multiplayer === true ? <p>True</p> : <p>False</p>}
+            </h2>
           </div>
           <div className="gameRating">
             <h2>Rating: {games.rating}</h2>
