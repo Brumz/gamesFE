@@ -39,6 +39,11 @@ const GamesIndex = props => {
   return (
     <div className="gamesDisplayed">
       <NavBar />
+      <div className="newBtn">
+        <Link to="/newgame">
+          <button className="newGameBtn">Add Game</button>
+        </Link>
+      </div>
       <div className="games">{games}</div>
     </div>
   );
