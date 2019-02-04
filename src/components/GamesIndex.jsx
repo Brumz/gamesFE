@@ -32,6 +32,10 @@ const GamesIndex = props => {
           <div className="gameRating">
             <h2>Rating: {games.rating}</h2>
           </div>
+          <div className="Btns">
+            <button className="deleteBtn">Delete Game</button>
+            <button className="editGame">Edit Game</button>
+          </div>
         </div>
       </div>
     );
