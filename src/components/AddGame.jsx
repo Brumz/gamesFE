@@ -7,10 +7,9 @@ const AddGame = props => {
     <div>
       <NavBar />
       <div className="form">
-        <h1> Add Game </h1>
+        <h1 className="addGameH"> Add Game </h1>
         <form className="formIn" onSubmit={props.handleSubmit}>
-          <label>
-            Title{" "}
+          <label className="lblTitle">
             <input
               type="text"
               name="title"
@@ -18,17 +17,15 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Poster URL{" "}
+          <label className="lbl">
             <input
               type="text"
               name="poster"
-              placeholder="Url"
+              placeholder="Poster Url"
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Publisher
+          <label className="lbl">
             <input
               type="text"
               name="publisher"
@@ -36,8 +33,7 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Developer{" "}
+          <label className="lbl">
             <input
               type="text"
               name="developer"
@@ -45,8 +41,7 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Year
+          <label className="lbl">
             <input
               type="number"
               name="year"
@@ -54,8 +49,7 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Multiplayer
+          <label className="lbl">
             <input
               type="boolean"
               name="Multiplayer"
@@ -63,8 +57,7 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <label>
-            Rating
+          <label className="lbl">
             <input
               type="number"
               name="rating"
