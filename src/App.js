@@ -63,6 +63,11 @@ class App extends Component {
       this.setState({ allInputs: true });
     }
   };
+  deleteGame = e => {
+    fetch(`https://rumz-games.herokuapp.com/games/${e.target.id}`, {
+      method: "DELETE"
+    }).then(() => this.reload());
+  };
   gameSelected = e => {
     this.setState({ selected: e.target.id });
   };
@@ -97,7 +102,13 @@ class App extends Component {
             <Route
               path="/games"
               exact
-              render={() => <GamesIndex games={this.state.games} />}
+              render={() => (
+                <GamesIndex
+                  selectedGame={this.gameSelected}
+                  deleteGame={this.deleteGame}
+                  games={this.state.games}
+                />
+              )}
             />
             <Route
               path="/newgame"

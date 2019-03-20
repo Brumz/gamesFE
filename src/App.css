@@ -1,5 +1,5 @@
 .navBar {
-  height: 10vh;
+  height: 5vh;
   width: 100vw;
   background-color: black;
   color: black;
@@ -91,9 +91,8 @@ button:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 2rem;
   align-items: center;
-  width: 95vw;
+  width: 100vw;
   background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw==");
 }
 
@@ -151,4 +150,11 @@ input {
 
 h2 {
   font-size: 1.25rem;
+}
+
+.newGameBtn {
+  width: 100vw;
+  height: 5vh;
+  border: solid black .25rem;
+  background-color: greenyellow;
 }

@@ -33,7 +33,13 @@ const GamesIndex = props => {
             <h2>Rating: {games.rating}</h2>
           </div>
           <div className="Btns">
-            <button className="deleteBtn">Delete Game</button>
+            <button
+              className="deleteBtn"
+              id={games.id}
+              onClick={props.deleteGame}
+            >
+              Delete Game
+            </button>
             <button className="editGame">Edit Game</button>
           </div>
         </div>
