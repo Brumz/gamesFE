@@ -93,7 +93,8 @@ button:hover {
   flex-wrap: wrap;
   padding: 2rem;
   align-items: center;
-  width: 100vw;
+  width: 95vw;
+  background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw==");
 }
 
 .gamePoster {
@@ -142,4 +143,12 @@ input {
 
 .addGameH {
   color: greenyellow;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
 }

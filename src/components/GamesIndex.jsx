@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const GamesIndex = props => {
   const games = props.games.map(games => {
     return (
-      <div id={games.id}>
+      <div className="gamesIndex" id={games.id}>
         <div className="gamesList">
           <div className="gameTitle">
-            <h1> {games.title}</h1>
+            <h1 className="title"> {games.title}</h1>
           </div>
           <div className="gamePoster">
             <img className="gamePoster" src={games.poster} alt="poster" />

@@ -47,7 +47,7 @@ class App extends Component {
       },
       body: JSON.stringify(newGame)
     }).then(res => res.json());
-    // .then(() => (window.location = "http://tha-rumz-imdb.surge.sh/movies"));
+    // .then(() => (window.location = ""));
   };
   newGameInput = e => {
     const { name, value } = e.target;
