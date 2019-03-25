@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar";
 
 const AddGame = props => {
   return (
-    <div>
+    <div className="addGameBkg">
       <NavBar />
       <div className="form">
         <h1 className="addGameH"> Add Game </h1>
@@ -21,7 +21,7 @@ const AddGame = props => {
             <input
               type="text"
               name="poster"
-              placeholder="Poster Url"
+              placeholder="Poster/JPEG Url"
               onChange={props.newGameInput}
             />
           </label>
@@ -61,7 +61,7 @@ const AddGame = props => {
             <input
               type="number"
               name="rating"
-              placeholder="Rate game 1-5"
+              placeholder="Rate game 1-10"
               onChange={props.newGameInput}
             />
           </label>
