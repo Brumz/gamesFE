@@ -1,16 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+
 .navBar {
   height: 5vh;
   width: 100vw;
-  background-color: black;
+  background: black;
   color: black;
   opacity: .85;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bangers', cursive;
+
 }
 
 .home {
   text-decoration: none;
   text-decoration-color: white;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  padding: 0rem 1rem;
 }
 
 button:hover {
@@ -27,7 +34,7 @@ button:hover {
 .backGround {
   height: 100vh;
   width: auto;
-  background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw==");
+  background: #080808;
   opacity: .95;
 }
 
@@ -45,7 +52,7 @@ button:hover {
   position: absolute;
   top: -2px;
   Left: -2px;
-  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+  background: linear-gradient(45deg, white, black, greenyellow, white, white, black, greenyellow, white, black, greenyellow);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -77,10 +84,11 @@ button:hover {
   background: none;
   color: white;
   font-size: 3rem;
-  border: 0.5rem solid white;
+  border: none;
   border-radius: 1rem;
   margin: 4rem;
   margin-top: 5rem;
+  font-family: 'Bangers', cursive;
 }
 
 .gamesRoute {
@@ -106,13 +114,15 @@ button:hover {
 .gamesList {
   border: solid .25rem black;
   margin: 1rem;
+  font-family: 'Bangers', cursive;
   width: 18rem;
   height: 45rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1rem;
-  background-color: lightgrey;
+  background: linear-gradient(0deg, #000, #262626);
+  color: white;
 }
 
 .form {
@@ -162,5 +172,21 @@ h2 {
 }
 
 .addGameBkg {
-  background-color: black;
+  background: linear-gradient(0deg, #000, #262626);
+}
+
+.add {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: white;
+  font-size: 1.75rem;
+  padding: 0rem 1rem;
+}
+
+.gamez {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: white;
+  font-size: 2.75rem;
+
 }

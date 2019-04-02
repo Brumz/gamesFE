@@ -77,14 +77,16 @@ class App extends Component {
       .then(res =>
         this.setState({
           game: res,
+          // games: [],
           title: "",
-          publiher: "",
-          developer: undefined,
+          publisher: "",
+          developer: "",
           year: undefined,
           multiplayer: undefined,
           rating: undefined,
           poster: "",
-          selected: undefined
+          selected: undefined,
+          allInputs: false
         })
       );
   };
@@ -107,6 +109,7 @@ class App extends Component {
                   selectedGame={this.gameSelected}
                   deleteGame={this.deleteGame}
                   games={this.state.games}
+                  reload={this.reload}
                 />
               )}
             />

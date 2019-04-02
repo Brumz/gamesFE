@@ -11,7 +11,7 @@ const HomePage = props => {
         <div className="gamesRoute">
           <Link to="/games">
             <button className="gamesBtn" onClick={props.games}>
-              Games
+              Gamez
             </button>
           </Link>
         </div>
