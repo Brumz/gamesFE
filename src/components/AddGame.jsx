@@ -53,7 +53,7 @@ const AddGame = props => {
             <input
               type="boolean"
               name="Multiplayer"
-              placeholder="Is this multiplayer?"
+              placeholder="Is this multiplayer(true/false)?"
               onChange={props.newGameInput}
             />
           </label>
@@ -65,7 +65,7 @@ const AddGame = props => {
               onChange={props.newGameInput}
             />
           </label>
-          <button className="addMovieBtn"> Add Game </button>
+          <button className="addGamebtn"> Add Game </button>
         </form>
       </div>
     </div>

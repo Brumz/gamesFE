@@ -72,12 +72,11 @@ class App extends Component {
     this.setState({ selected: e.target.id });
   };
   reload = () => {
-    fetch("https://rumz-games.herokuapp.com/games/")
+    fetch("https://rumz-games.herokuapp.com/games")
       .then(res => res.json())
       .then(res =>
         this.setState({
-          game: res,
-          // games: [],
+          games: res,
           title: "",
           publisher: "",
           developer: "",
@@ -85,8 +84,7 @@ class App extends Component {
           multiplayer: undefined,
           rating: undefined,
           poster: "",
-          selected: undefined,
-          allInputs: false
+          selected: undefined
         })
       );
   };

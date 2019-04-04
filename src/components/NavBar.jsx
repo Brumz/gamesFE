@@ -7,7 +7,9 @@ const NavBar = () => {
       <a className="home" href="/">
         Home
       </a>
-      <a className="gamez">Gamez</a>
+      <a className="gamez" href="/games">
+        Gamez
+      </a>
       <a className="add" href="/newgame">
         Add
       </a>

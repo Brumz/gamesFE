@@ -15,7 +15,7 @@
 .home {
   text-decoration: none;
   text-decoration-color: white;
-  color: white;
+  color: greenyellow;
   font-size: 1.75rem;
   padding: 0rem 1rem;
 }
@@ -34,7 +34,7 @@ button:hover {
 .backGround {
   height: 100vh;
   width: auto;
-  background: #080808;
+  background: black;
   opacity: .95;
 }
 
@@ -52,7 +52,7 @@ button:hover {
   position: absolute;
   top: -2px;
   Left: -2px;
-  background: linear-gradient(45deg, white, black, greenyellow, white, white, black, greenyellow, white, black, greenyellow);
+  background: linear-gradient(90deg, white, black, greenyellow, white, black, black, greenyellow, white, black, greenyellow);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -178,7 +178,8 @@ h2 {
 .add {
   text-decoration: none;
   text-decoration-color: white;
-  color: white;
+  color: greenyellow;
+  ;
   font-size: 1.75rem;
   padding: 0rem 1rem;
 }
@@ -186,7 +187,28 @@ h2 {
 .gamez {
   text-decoration: none;
   text-decoration-color: white;
-  color: white;
+  color: greenyellow;
   font-size: 2.75rem;
 
+}
+
+.editGame {
+  background-color: greenyellow;
+  border-radius: 1rem;
+  border: none;
+  margin: .5rem;
+}
+
+.deleteBtn {
+  background-color: greenyellow;
+  border-radius: 1rem;
+  border: none;
+}
+
+.addGamebtn {
+  background-color: greenyellow;
+  border-radius: 1rem;
+  border: none;
+  height: 2rem;
+  width: 10rem;
 }
