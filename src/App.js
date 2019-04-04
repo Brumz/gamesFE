@@ -46,8 +46,9 @@ class App extends Component {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(newGame)
-    }).then(res => res.json());
-    // .then(() => (window.location = ""));
+    })
+      .then(res => res.json())
+      .then(() => (window.location = "http://localhost:3000/games"));
   };
   newGameInput = e => {
     const { name, value } = e.target;
