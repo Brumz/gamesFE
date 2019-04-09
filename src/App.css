@@ -52,7 +52,7 @@ button:hover {
   position: absolute;
   top: -2px;
   Left: -2px;
-  background: linear-gradient(90deg, white, black, greenyellow, white, black, black, greenyellow, white, black, greenyellow);
+  background: linear-gradient(90deg, greenyellow, greenyellow, greenyellow, greenyellow, black, black, greenyellow, greenyellow, black, greenyellow);
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -82,7 +82,7 @@ button:hover {
 .gamesBtn {
   opacity: 1;
   background: none;
-  color: white;
+  color: greenyellow;
   font-size: 3rem;
   border: none;
   border-radius: 1rem;
@@ -110,6 +110,11 @@ button:hover {
   width: 25vh;
 }
 
+.gamesIndex {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+}
 
 .gamesList {
   border: solid .25rem black;
@@ -124,6 +129,8 @@ button:hover {
   background: linear-gradient(0deg, #000, #262626);
   color: white;
 }
+
+
 
 .form {
   height: 100vh;
@@ -143,9 +150,15 @@ button:hover {
 }
 
 label>input {
-  border: .2rem solid greenyellow;
+  border: .2rem solid white;
+  border-radius: 1rem;
   height: 1.5rem;
   width: 15rem;
+  background-color: black;
+  color: greenyellow;
+  text-align: center;
+  text-decoration-color: greenyellow;
+
 }
 
 input {
@@ -153,7 +166,7 @@ input {
 }
 
 .addGameH {
-  color: greenyellow;
+  color: white;
 }
 
 .title {
@@ -207,6 +220,7 @@ h2 {
 
 .addGamebtn {
   background-color: greenyellow;
+  color: black;
   border-radius: 1rem;
   border: none;
   height: 2rem;

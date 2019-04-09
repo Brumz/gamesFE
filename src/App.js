@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import HomePage from "./components/HomePage";
 import GamesIndex from "./components/GamesIndex";
 import AddGame from "./components/AddGame";
+import SingleGamePage from "./components/SingleGamePage";
 
 class App extends Component {
   constructor() {
@@ -119,6 +119,16 @@ class App extends Component {
                 <AddGame
                   newGameInput={this.newGameInput}
                   handleSubmit={this.handleSubmit}
+                />
+              )}
+            />
+            <Route
+              path="/game"
+              exact
+              render={() => (
+                <SingleGamePage
+                  selected={this.state.selected}
+                  games={this.state.games}
                 />
               )}
             />

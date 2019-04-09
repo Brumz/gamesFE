@@ -9,7 +9,11 @@ const GamesIndex = props => {
       <div className="gamesIndex" id={games.id}>
         <div className="gamesList">
           <div className="gameTitle">
-            <h1 className="title"> {games.title}</h1>
+            <Link to="/game">
+              <h1 className="title" onClick={props.selectedGame} id={games.id}>
+                {games.title}
+              </h1>
+            </Link>
           </div>
           <div className="gamePoster">
             <img className="gamePoster" src={games.poster} alt="poster" />
