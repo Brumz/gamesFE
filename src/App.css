@@ -20,6 +20,10 @@
   padding: 0rem 1rem;
 }
 
+.home:hover {
+  color: white;
+}
+
 button:hover {
   cursor: pointer;
 }
@@ -89,6 +93,10 @@ button:hover {
   margin: 4rem;
   margin-top: 5rem;
   font-family: 'Bangers', cursive;
+}
+
+.gamesBtn:hover {
+  color: white;
 }
 
 .gamesRoute {
@@ -171,6 +179,7 @@ input {
 
 .title {
   font-size: 2rem;
+  text-decoration: white;
 }
 
 h2 {
@@ -197,12 +206,20 @@ h2 {
   padding: 0rem 1rem;
 }
 
+.add:hover {
+  color: white;
+}
+
 .gamez {
   text-decoration: none;
   text-decoration-color: white;
   color: greenyellow;
-  font-size: 2.75rem;
+  font-size: 2rem;
+  padding: 0rem 1rem;
+}
 
+.gamez:hover {
+  color: white;
 }
 
 .editGame {
@@ -210,12 +227,24 @@ h2 {
   border-radius: 1rem;
   border: none;
   margin: .5rem;
+  font-family: 'Bangers', cursive;
+}
+
+.editGame:hover {
+  background-color: white;
+  font-size: 1rem;
 }
 
 .deleteBtn {
   background-color: greenyellow;
   border-radius: 1rem;
   border: none;
+  font-family: 'Bangers', cursive;
+}
+
+.deleteBtn:hover {
+  background-color: red;
+  font-size: 1rem;
 }
 
 .addGamebtn {
@@ -225,4 +254,13 @@ h2 {
   border: none;
   height: 2rem;
   width: 10rem;
+}
+
+.gamePageLink {
+  text-decoration: none;
+  color: white;
+}
+
+.gamePageLink:hover {
+  color: greenyellow;
 }

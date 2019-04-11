@@ -9,7 +9,7 @@ const GamesIndex = props => {
       <div className="gamesIndex" id={games.id}>
         <div className="gamesList">
           <div className="gameTitle">
-            <Link to="/game">
+            <Link to="/game" className="gamePageLink">
               <h1 className="title" onClick={props.selectedGame} id={games.id}>
                 {games.title}
               </h1>
