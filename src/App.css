@@ -3,25 +3,48 @@
 .navBar {
   height: 5vh;
   width: 100vw;
-  background: black;
+  background: white;
   color: black;
-  opacity: .85;
+  opacity: 0.85;
   display: flex;
   justify-content: space-between;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
 
+.LandingNav {
+  height: 5vh;
+  width: 100vw;
+  background: white;
+  color: white;
+  opacity: 0.85;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Bangers", cursive;
+}
+
+/* .LoginBtn {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: White;
+  font-size: 1.75rem;
+  padding: 0rem 1rem;
+} */
+
+.LoginBtn:hover {
+  color: greenyellow;
 }
 
 .home {
   text-decoration: none;
   text-decoration-color: white;
-  color: greenyellow;
+  color: black;
   font-size: 1.75rem;
   padding: 0rem 1rem;
 }
 
 .home:hover {
-  color: white;
+  color: #c0c0c0;
 }
 
 button:hover {
@@ -38,8 +61,8 @@ button:hover {
 .backGround {
   height: 100vh;
   width: auto;
-  background: black;
-  opacity: .95;
+  background: white;
+  opacity: 0.95;
 }
 
 .homePage {
@@ -47,16 +70,26 @@ button:hover {
   margin: 200px auto 0;
   width: 300px;
   height: 250px;
-  background: linear-gradient(0deg, #000, #262626);
+  background: white;
 }
 
 .homePage:before,
 .homePage:after {
-  content: '';
+  content: "";
   position: absolute;
   top: -2px;
-  Left: -2px;
-  background: linear-gradient(90deg, greenyellow, greenyellow, greenyellow, greenyellow, black, black, greenyellow, greenyellow, black, greenyellow);
+  left: -2px;
+  background: linear-gradient(
+    90deg,
+    #501f3a,
+    #501f3a,
+    #cb2d6f,
+    #cb2d6f,
+    #14a098,
+    #14a098,
+    #0f292f,
+    #0f292f
+  );
   background-size: 400%;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
@@ -65,7 +98,7 @@ button:hover {
 }
 
 .homePage:after {
-  filter: blur(25px)
+  filter: blur(25px);
 }
 
 @keyframes animate {
@@ -80,28 +113,35 @@ button:hover {
   100% {
     background-position: 0 0;
   }
-
 }
 
 .gamesBtn {
   opacity: 1;
   background: none;
-  color: greenyellow;
+  color: black;
   font-size: 3rem;
   border: none;
   border-radius: 1rem;
   margin: 4rem;
   margin-top: 5rem;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
+  text-decoration: none;
 }
 
 .gamesBtn:hover {
-  color: white;
+  color: #c0c0c0;
 }
 
 .gamesRoute {
   display: flex;
   justify-content: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  height: 0;
+  text-decoration: none;
 }
 
 .games {
@@ -110,7 +150,8 @@ button:hover {
   flex-wrap: wrap;
   align-items: center;
   width: 100vw;
-  background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw==");
+  /* background-image: url("https://img.purch.com/definitive-pc-games/w/755/aHR0cDovL21lZGlhLmJlc3RvZm1pY3JvLmNvbS83L00vNzAwMTE0L29yaWdpbmFsL3N0ZWFtd29ya3Nob3Bfd2VidXBsb2FkX3ByZXZpZXdmaWxlXzIwMDg1MDEyMV9wcmV2aWV3LnBuZw=="); */
+  background-color: white;
 }
 
 .gamePoster {
@@ -125,9 +166,9 @@ button:hover {
 }
 
 .gamesList {
-  border: solid .25rem black;
+  border: solid 0.25rem black;
   margin: 1rem;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
   width: 18rem;
   height: 45rem;
   display: flex;
@@ -137,8 +178,6 @@ button:hover {
   background: linear-gradient(0deg, #000, #262626);
   color: white;
 }
-
-
 
 .form {
   height: 100vh;
@@ -157,8 +196,8 @@ button:hover {
   align-items: center;
 }
 
-label>input {
-  border: .2rem solid white;
+label > input {
+  border: 0.2rem solid #c0c0c0;
   border-radius: 1rem;
   height: 1.5rem;
   width: 15rem;
@@ -166,11 +205,10 @@ label>input {
   color: greenyellow;
   text-align: center;
   text-decoration-color: greenyellow;
-
 }
 
 input {
-  margin: .55rem;
+  margin: 0.55rem;
 }
 
 .addGameH {
@@ -189,45 +227,45 @@ h2 {
 .newGameBtn {
   width: 100vw;
   height: 5vh;
-  border: solid black .25rem;
+  border: solid black 0.25rem;
   background-color: greenyellow;
 }
 
 .addGameBkg {
-  background: linear-gradient(0deg, #000, #262626);
+  background-color: white;
 }
 
 .add {
   text-decoration: none;
-  text-decoration-color: white;
-  color: greenyellow;
-  ;
+  text-decoration-color: #c0c0c0;
+  color: black;
+
   font-size: 1.75rem;
   padding: 0rem 1rem;
 }
 
 .add:hover {
-  color: white;
+  color: #c0c0c0;
 }
 
 .gamez {
   text-decoration: none;
   text-decoration-color: white;
-  color: greenyellow;
+  color: black;
   font-size: 2rem;
   padding: 0rem 1rem;
 }
 
 .gamez:hover {
-  color: white;
+  color: #c0c0c0;
 }
 
 .editGame {
-  background-color: greenyellow;
+  background-color: #c0c0c0;
   border-radius: 1rem;
   border: none;
-  margin: .5rem;
-  font-family: 'Bangers', cursive;
+  margin: 0.5rem;
+  font-family: "Bangers", cursive;
 }
 
 .editGame:hover {
@@ -236,10 +274,10 @@ h2 {
 }
 
 .deleteBtn {
-  background-color: greenyellow;
+  background-color: #c0c0c0;
   border-radius: 1rem;
   border: none;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 .deleteBtn:hover {
@@ -248,12 +286,13 @@ h2 {
 }
 
 .addGamebtn {
-  background-color: greenyellow;
+  background-color: #14a098;
   color: black;
   border-radius: 1rem;
   border: none;
   height: 2rem;
   width: 10rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5), 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .gamePageLink {
@@ -262,5 +301,5 @@ h2 {
 }
 
 .gamePageLink:hover {
-  color: greenyellow;
+  color: black;
 }
